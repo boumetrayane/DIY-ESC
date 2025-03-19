@@ -14,6 +14,8 @@ byte motor_speed;
 unsigned int i; //// Direction flag
 bool reverse = false; //// Declare motor_speed here 
 
+//int pwm_value = map(flight_controller_pwm, 1000, 2000, 50, 255);
+
 void setup() { 
   DDRD |= 0x38; // Configure pins 3, 4, and 5 as outputs
   PORTD = 0x00; 
